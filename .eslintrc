@@ -1,0 +1,47 @@
+{
+  "parser": "babel-eslint",
+  "env": {
+    "browser": true,
+    "es6": true,
+    "node": true,
+    "jest": true
+  },
+  "globals": {
+    "mockAdapter": true,
+    "mockStore": true
+  },
+  "settings": {
+    "import/resolver": {
+      "node": {
+        "moduleDirectory": ["node_modules", "src/"]
+      }
+    }
+  },
+  "extends": ["react-app", "airbnb"],
+  "rules": {
+    "no-console": "warn",
+    "function-paren-newline": "off",
+    "react/jsx-props-no-spreading": "off",
+    "no-useless-rename": ["error", {
+      "ignoreDestructuring": true,
+      "ignoreImport": false,
+      "ignoreExport": false
+    }],
+    "object-curly-newline": ["error", { "consistent": true }],
+    "react/jsx-filename-extension": "off",
+    "arrow-parens": [2, "as-needed", { "requireForBlockBody": true }],
+    "max-len": [
+      "error",
+      120,
+      2,
+      {
+        "ignoreComments": true,
+        "ignoreRegExpLiterals": true,
+        "ignoreStrings": true,
+        "ignoreTemplateLiterals": true,
+        "ignoreTrailingComments": true,
+        "ignoreUrls": true
+      }
+    ]
+  }
+}

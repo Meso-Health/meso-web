@@ -1,0 +1,10 @@
+# Make deploy previews connect to the sandbox API
+[context.deploy-preview.environment]
+  REACT_APP_COVERAGE_API_BASE = "https://uhp-sandbox.watsi.org/"
+
+# Redirect all pages to the index page
+# See: https://www.netlify.com/docs/redirects/#history-pushstate-and-single-page-apps
+[[redirects]]
+  from = "/*"
+  to = "/index.html"
+  status = 200

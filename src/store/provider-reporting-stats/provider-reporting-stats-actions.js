@@ -1,0 +1,14 @@
+export const FETCH_PROVIDER_REPORTING_STATS_REQUEST = 'FETCH_PROVIDER_REPORTING_STATS_REQUEST';
+export const FETCH_PROVIDER_REPORTING_STATS_SUCCESS = 'FETCH_PROVIDER_REPORTING_STATS_SUCCESS';
+export const FETCH_PROVIDER_REPORTING_STATS_FAILURE = 'FETCH_PROVIDER_REPORTING_STATS_FAILURE';
+
+export const fetchProviderReportingStats = (providerId, startDate, endDate) => ({
+  CALL_API: {
+    call: api => api.fetchProviderReportingStats(providerId, startDate, endDate),
+    types: [
+      FETCH_PROVIDER_REPORTING_STATS_REQUEST,
+      FETCH_PROVIDER_REPORTING_STATS_SUCCESS,
+      FETCH_PROVIDER_REPORTING_STATS_FAILURE,
+    ],
+  },
+});

@@ -1,0 +1,31 @@
+# This file is mostly adapted from https://circleci.com/docs/2.0/language-javascript/.
+
+version: 2
+jobs:
+  build:
+    working_directory: ~/meso-admin
+    docker:
+      - image: circleci/node:10.8.0
+    steps:
+      - checkout
+      - run: echo 'export PATH=$PATH:$HOME/$CIRCLE_PROJECT_REPONAME/node_modules/.bin' >> $BASH_ENV
+      - restore_cache:
+          keys:
+            # Find a cache corresponding to this specific package-lock.json checksum.
+            # When this file is changed, this key will fail.
+            - meso-admin-v1-bundle-{{ checksum "package-lock.json" }}
+      - run:
+          name: Install Dependencies
+          command: |  # `npm ci` always deletes and re-fetches all dependencies, so we don't want to run it after a successful cache restore
+            if [ ! -d node_modules ]; then
+              npm ci
+            fi
+      - save_cache:
+          key: meso-admin-v1-bundle-{{ checksum "package-lock.json" }}
+          paths:
+            - ./node_modules
+      - run:
+          name: Run tests
+          command: npm test
+      - store_test_results:
+          path: test_results.xml

@@ -1,0 +1,12 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<svg width="48px" height="48px" viewBox="0 0 48 48" version="1.1" xmlns="http://www.w3.org/2000/svg" xmlns:xlink="http://www.w3.org/1999/xlink">
+    <!-- Generator: (null) (null) ((null)) - http://www.bohemiancoding.com/sketch -->
+    <title>arrow-up</title>
+    <desc>Created with (null).</desc>
+    <defs></defs>
+    <g id="Page-1" stroke="none" stroke-width="1" fill="none" fill-rule="evenodd">
+        <g id="arrow-up" fill="#000000">
+            <path d="M45.359375,31.9453125 C45.8125023,32.4765652 45.8945327,33.0351533 45.6054688,33.6210938 C45.3164048,34.2070342 44.8359409,34.5 44.1640625,34.5 L4.5546875,34.5 C3.88280914,34.5 3.42578246,34.2070342 3.18359375,33.6210938 C2.94140504,33.0351533 3.04687273,32.4765652 3.5,31.9453125 L22.109375,11.390625 C22.703128,10.7187466 23.4531205,10.3828125 24.359375,10.3828125 C25.2656295,10.3828125 26.015622,10.7187466 26.609375,11.390625 L45.359375,31.9453125 Z" id="directup"></path>
+        </g>
+    </g>
+</svg>

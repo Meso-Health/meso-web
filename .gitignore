@@ -1,0 +1,27 @@
+# Ignore scrap files
+.DS_Store
+.idea
+
+# Ignore local configs
+.vscode
+
+# Ignore local .env overrides
+.env.local
+.env.development.local
+.env.test.local
+.env.production.local
+
+# Ignore npm scraps
+node_modules/
+npm-debug.log
+yarn-error.log
+yarn.lock
+
+# Ignore local testing files
+db/
+
+# Ignore code coverage files
+coverage/
+
+# Ignore build files
+build/
