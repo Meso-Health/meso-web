@@ -222,7 +222,6 @@ export const ROLE_PERMISSIONS = {
     ...claimsStatisticsPermissions,
     ...reimbursementStatisticsPermissions,
     ...claimsReimbursementPermissions,
-    ...reimbursementPaymentPermissions,
     ...reimbursementsViewOnlyPermissions,
   ],
   enrollment: [
