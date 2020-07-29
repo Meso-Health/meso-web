@@ -213,7 +213,7 @@ export const ROLE_PERMISSIONS = {
     ...enrollmentStatisticsPermissions,
     ...memberViewOnlyPermissions,
     ...reimbursementStatisticsPermissions,
-    ...reimbursementsViewOnlyPermissions,
+    ...reimbursementPaymentPermissions,
   ],
   adjudication: [
     ROLES.ADJUDICATION,
@@ -222,7 +222,7 @@ export const ROLE_PERMISSIONS = {
     ...claimsStatisticsPermissions,
     ...reimbursementStatisticsPermissions,
     ...claimsReimbursementPermissions,
-    ...reimbursementPaymentPermissions,
+    ...reimbursementsViewOnlyPermissions,
   ],
   enrollment: [
     ROLES.ENROLLMENT,
